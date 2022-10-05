@@ -53,8 +53,7 @@ header{
     background-color: #393E46;
     width: 50%;
     height:max-content;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -74,13 +73,18 @@ header{
     display: flex;
     flex-direction: column;
     align-items: left;
-    width:68.15%;
+    width:fit-content;
+    flex-grow: 1;
     padding: 5px;
     padding-left: 0%;
     background-color:#222831;
     height: max-content;
     color: #EEEEEE;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.txtAptitudes{
+    width: max-content;
 }
 
 .caja-descripcion{
@@ -90,14 +94,15 @@ header{
     background-color: #00ADB5;
     width: 49%;
     height:max-content;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    width: max-content;
     padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow: hidden;
 }
 
-
+.txtDescripcion{
+    width: max-content;
+}
 
 #FotoCara{
     width: 80%;
@@ -109,13 +114,7 @@ header{
     height: 40px;
 }
 
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #00ADB5;
-}
+
 
 .contacto{
     width: 100%;
@@ -124,20 +123,29 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #393E46;
 }
 
 .caja-contacto{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:start;
     align-items: center;
     width: 70%;
     padding: 5px;
     padding-left: 0%;
-    background-color:#222831;
+    background-color:#00ADB5;
     height: max-content;
     border-top-right-radius: 20px;
     color: #EEEEEE;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #00ADB5;
 }
